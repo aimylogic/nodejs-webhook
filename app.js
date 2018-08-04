@@ -26,6 +26,10 @@ const registry = {
 
 webhook(registry);
 
+app.get('/', (req, res) => {
+    res.send('<p>Укажите этот URL в настройках вашего бота на <a href="http://aimylogic.com" target="_blank">aimylogic.com</a></p><a href="https://github.com/aimylogic/nodejs-webhook" target="_blank">подробнее</a>');
+});
+
 app.post('/', (req, res) => {
     let session = req.body;
     let action = session.action;
