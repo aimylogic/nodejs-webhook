@@ -1,5 +1,5 @@
 {
-  "name": "Вебхук на Node JS для Aimylogic",
+  "name": "Вебхук на Node JS",
   "description": "Это пример вебхука для бота на платформе Aimylogic",
   "repository": "https://github.com/aimylogic/nodejs-webhook",
   "logo": "https://cdn.rawgit.com/heroku/node-js-getting-started/master/public/node.svg",
