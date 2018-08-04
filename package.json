@@ -1,0 +1,15 @@
+{
+  "name": "aimylogic-webhook-nodejs",
+  "version": "1.0.0",
+  "description": "Node.js webhook for Aimylogic",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "body-parser": "1.18.2",
+    "express": "4.16.2",
+    "ngrok": "3.0.1",
+    "nodemon": "^1.17.3"
+  }
+}
