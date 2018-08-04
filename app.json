@@ -1,8 +1,9 @@
 {
-  "name": "Вебхук на Node.js для Aimylogic",
-  "description": "Это пример вебхука для бота на платформе aimylogic.com",
+  "name": "Вебхук на Node JS для Aimylogic",
+  "description": "Это пример вебхука для бота на платформе Aimylogic",
   "repository": "https://github.com/aimylogic/nodejs-webhook",
   "logo": "https://cdn.rawgit.com/heroku/node-js-getting-started/master/public/node.svg",
+  "website": "http://aimylogic.com",
   "buildpacks": [
     {
       "url": "heroku/nodejs"
