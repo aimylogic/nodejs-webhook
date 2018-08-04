@@ -1,6 +1,6 @@
 {
   "name": "Вебхук на Node JS",
-  "description": "Это пример вебхука для бота на платформе Aimylogic",
+  "description": "Это шаблон вебхука для бота на платформе Aimylogic. После установки вы сможете скачать и изменять его код.",
   "repository": "https://github.com/aimylogic/nodejs-webhook",
   "logo": "https://cdn.rawgit.com/heroku/node-js-getting-started/master/public/node.svg",
   "website": "http://aimylogic.com",
