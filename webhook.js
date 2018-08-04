@@ -13,6 +13,6 @@ module.exports = (webhook) => {
      *
      * webhook.on('событие', (session) => session.variable = 'значение');
      *
-     * Подробнее читайте в README.md
+     * Подробнее читайте здесь - https://github.com/aimylogic/nodejs-webhook
      */
 };

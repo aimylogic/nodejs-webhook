@@ -12,6 +12,8 @@
 Его нужно указать в настройках вашего бота на Aimylogic в поле "URL вашего вебхука".
 
 ### Как загружать изменения на Heroku
+Чтобы загружать изменения кода вебхука на Heroku, выполните следующие шаги.
+
 Установите [git](https://git-scm.com/downloads) и [Heroku CLI](https://devcenter.heroku.com/articles/heroku-cli#download-and-install).
 Запустите терминал и выполните следующие команды
 
@@ -22,6 +24,8 @@ cd <название вашего приложения на Heroku>
 git remote add origin https://github.com/aimylogic/nodejs-webhook
 git pull origin master
 ```
+
+_Это нужно проделать только один раз._
 
 Теперь каждый раз, как вы готовы изменить код на вашем сервере, выполняйте команды
 
