@@ -4,7 +4,7 @@
 
 ## Как запустить на Heroku
 [heroku.com](http://heroku.com) предоставляет бесплатный хостинг для Node.js приложений.
-Чтобы запустить ваш вебхук на Heroku, нажмите на кнопку ниже.
+Чтобы запустить вашу копию этого вебхука на Heroku, нажмите на кнопку
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/aimylogic/nodejs-webhook)
 
