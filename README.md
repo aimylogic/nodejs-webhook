@@ -11,6 +11,8 @@
 Сервер на Heroku будет создан автоматически. После этого вам будет доступен публичный URL, на котором работает ваш вебхук.
 Его нужно указать в настройках вашего бота на Aimylogic в поле "URL вашего вебхука".
 
+<iframe src="https://player.vimeo.com/video/283196539" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
 ### Как загружать изменения на Heroku
 Чтобы загружать изменения кода вебхука на Heroku, выполните следующие шаги.
 
