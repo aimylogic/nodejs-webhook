@@ -6,5 +6,5 @@ var nodemon = require('nodemon');
 (async () => {
     const url = await ngrok.connect(3000);
     console.log("Webhook URL: " + url);
-    nodemon(`-x 'NGROK_URL=${url} node' ./app.js`);
+    nodemon(`-x "node ./app.js NGROK_URL=${url}"`);
 })();
