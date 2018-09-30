@@ -1,98 +1,91 @@
 #### Шаблон вебхука для ботов на Node.js
 
-О том, что такое вебхуки и для чего они нужны, читайте в [справочном центре Aimylogic](https://docs.aimylogic.com/%D0%BF%D1%80%D0%BE%D0%B4%D0%B2%D0%B8%D0%BD%D1%83%D1%82%D1%8B%D0%B5-%D0%B8%D0%BD%D1%81%D1%82%D1%80%D1%83%D0%BC%D0%B5%D0%BD%D1%82%D1%8B/%D0%B8%D0%BD%D1%82%D0%B5%D0%B3%D1%80%D0%B0%D1%86%D0%B8%D0%B8/%D0%B2%D0%B5%D0%B1%D1%85%D1%83%D0%BA).
+Please read more about Aimylogic webhooks in our [Help Center](https://help.aimylogic.com/en/article/webhook-14yx2uz/).
 
-## Как запустить на Heroku
-[heroku.com](http://heroku.com) предоставляет бесплатный хостинг для Node.js приложений.
-Чтобы запустить вашу копию этого вебхука на Heroku, нажмите на кнопку
+## How to run on Heroku
+[heroku.com](http://heroku.com) предоставляет provides a free plan for Node JS applications.
+Please click on the button below to run your copy of this webhook on Heroku
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/aimylogic/nodejs-webhook)
 
-Сервер на Heroku будет создан автоматически. После этого вам будет доступен публичный URL, на котором работает ваш вебхук.
-Его нужно указать в настройках вашего бота на Aimylogic в поле "URL вашего вебхука".
+Heroku will build and deploy your webhook automatically. After that you have to provide a public URL of your webhook in your bot's settings.
 
-[![Нажмите, чтобы посмотреть](https://i.imgur.com/ePsgzmf.jpg)](https://player.vimeo.com/video/283196539 "Нажмите, чтобы посмотреть")
+[![Clock to play](https://i.imgur.com/ePsgzmf.jpg)](https://player.vimeo.com/video/283196539 "Click to play")
 
-### Как загружать изменения на Heroku
-Чтобы загружать изменения кода вебхука на Heroku, выполните следующие шаги.
+### How to upload code changes
+Please make the next steps to upload your changes on Heroku.
 
-Установите [git](https://git-scm.com/downloads) и [Heroku CLI](https://devcenter.heroku.com/articles/heroku-cli#download-and-install).
-Запустите терминал и выполните следующие команды
+Install [git](https://git-scm.com/downloads) and [Heroku CLI](https://devcenter.heroku.com/articles/heroku-cli#download-and-install).
+Run a terminal (or console) on your machine and type
 
 ```
 heroku login
-heroku git:clone -a <название вашего приложения на Heroku>
-cd <название вашего приложения на Heroku>
+heroku git:clone -a <your Heroku application name>
+cd <your Heroku application name>
 git remote add origin https://github.com/aimylogic/nodejs-webhook
 git pull origin master
 ```
 
-_Это нужно проделать только один раз._
+_You have to do these steps only once._
 
-Теперь каждый раз, как вы готовы изменить код на вашем сервере, выполняйте команды
+Once you are ready to upload your changes to Heroku, please type
 
 ```
 git add .
-git commit -am "комментарий"
+git commit -am "some comments"
 git push
 ```
 
-После этого Heroku самостоятельно пересоберет ваш вебхук и запустит новую версию кода.
+Heroku will build and deploy your changes automatically.
 
-## Как запускать локально в режиме разработки
-Откройте терминал и перейдите в папку, в которую вы скопировали проект.
-Выполните команду `npm install`, а затем `node dev`.
+## How to run this template locally in development mode
+Run a terminal (or console) and jump into the folder with your copy of this template.
+Type `npm install`, then `node dev`.
 
-Вы увидите временный URL для вашего вебхука в консоли. Например, `https://42cbddca.ngrok.io`.
-Скопируйте его и вставьте в настройках вашего бота на aimylogic.com в поле "Вебхук для тестов".
-После этого, когда вы будете тестировать вашего бота в тестовом виджете, **все запросы будут приходить к серверу на вашей машине**.
+You will see a temporal URL for your webhook. Like `https://42cbddca.ngrok.io`.
+Copy it and paste into the field named "Webhook for tests" in your bot's settings.
+**All requests to your webhook will go to your local machine** while you test your bot scenario via a test widget on Aimylogic. This is very useful for rapid development and debugging purposes.
 
-_При изменении любого файла сервер будет автоматически перезапускаться, поэтому не нужно останавливать и перезапускать его вручную._
+_Note that you don't have to restart the local server each time you change any source file. Nodemon will handle it for you serving the same public URL._
 
-Теперь вы можете вносить изменения и тестировать код локально во время разработки бота.
-И только после того как все протестировано, запускать вебхук на публичном сервере (см выше, как запустить вебхук на Heroku).
+## How to use this template
+`webhook.js` file contains all source code you need to change.
+Here you can add/remove action handlers for your webhook (please read more about webhook actions on [Help Center](https://help.aimylogic.com/en/article/webhook-14yx2uz/)).
 
-## Как работать с этим шаблоном
-Код для вашего вебхука находится в файле `webhook.js`.
-В нем вы можете добавлять обработчики для событий от вашего бота (подробнее про события читайте в [справочном центре](https://docs.aimylogic.com/%D0%BF%D1%80%D0%BE%D0%B4%D0%B2%D0%B8%D0%BD%D1%83%D1%82%D1%8B%D0%B5-%D0%B8%D0%BD%D1%81%D1%82%D1%80%D1%83%D0%BC%D0%B5%D0%BD%D1%82%D1%8B/%D0%B8%D0%BD%D1%82%D0%B5%D0%B3%D1%80%D0%B0%D1%86%D0%B8%D0%B8/%D0%B2%D0%B5%D0%B1%D1%85%D1%83%D0%BA)).
-
-### Как добавить обработчик события
-В файле webhook.js напишите
+### How to add action handler
+Change the webhook.js file
 
 ```javascript
 module.exports = (webhook) => {
-  webhook.on('event1', (session) => session.variable = 'значение');
+  webhook.on('action1', (session) => session.variable = 'some value');
 }
 ```
 
-После того, как бот перейдет на экран с включенным событием _event1_, он выполнит запрос к вашему вебхуку, после чего в боте появится переменная _variable_ со значением _"значение"_.
+Once the bot steps into the screen with enabled action _action1_, it calls your webhook and receives variable named _variable_ with value _"some value"_.
 
-### Как вернуть несколько переменных
-Просто добавьте переменные в объект _session_. Например
+### How to return multiple variables
+Just add variables in _session_ object
 
 ```javascript
 module.exports = (webhook) => {
-  webhook.on('event1', (session) => {
-      session.variable1 = 'значение';
-      session.variable2 = 'значение';
+  webhook.on('action1', (session) => {
+      session.variable1 = 'some value';
+      session.variable2 = 'some value';
   });
 }
 ```
 
-После этого в боте появятся переменные _variable1_ и _variable2_.
-
-### Как выполнить асинхронную операцию
-Если вашему вебхуку по какому-то событию нужно выполнить асинхронную операцию (например, запрос к БД или к стороннему сервису), то в вашем обработчике верните Promise в качестве результата.
-Например
+### How to run an asynchronious operation
+Just return a Promise object if you need to run long operation like a HTTP request or database query
 
 ```javascript
 const https = require('https');
 
 module.exports = (webhook) => {
-  webhook.on('event1', (session) => {
+  webhook.on('action1', (session) => {
       return new Promise((resolve, reject) => {
          https.get('https://example.com', (resp) => {
-             session.variable = 'значение';
+             session.variable = 'some value';
              resolve();
          });
       });
@@ -100,30 +93,30 @@ module.exports = (webhook) => {
 }
 ```
 
-### Как добавить несколько событий
-Чтобы добавить несколько обработчиков событий, добавьте несколько событий таким образом
+### How to handle multiple actions
+You can add as many handlers as you need
 
 ```javascript
 module.exports = (webhook) => {
   webhook
-    .on('event1', (session) => {
+    .on('action1', (session) => {
             ...
         }
     )
-    .on('event2', (session) => {
+    .on('action2', (session) => {
             ...
         }
     );
 }
 ```
 
-### Как назначить один обработчик на несколько событий
-Вы можете передать массив вместо строки с именем события, например
+### How to use a single handler for multiple actions
+Just use an array instead of an action string
 
 ```javascript
 module.exports = (webhook) => {
-  webhook.on(['event1', 'event2'], (session) => {
-      session.variable1 = 'значение';
+  webhook.on(['action1', 'action2'], (session) => {
+      session.variable1 = 'some value';
   });
 }
 ```
