@@ -1,18 +1,17 @@
 /**
- * Когда бот переходит на экран, на котором указано событие для вебхука, он отправляет HTTP запрос с этим событием на ваш севрер.
- * В этом файле вы можете добавить обработчики событий от вашего бота.
- * Каждый обработчик - это простая функция, которая в аргументах принимает объект со всеми переменными из вашего бота и может их модифицировать.
- * Вы можете добавить в этот объект какие-то переменные или изменить текущие. После этого они будут переданы обратно боту и он продолжит выполнение сценария с новыми переменными.
+ * Once your bot steps into the screen with webhook action enabled, it requests your webhook URL with a full set of currently available variables.
+ * Here you can add handlers for such actions to calculate any data for your bot.
+ * Every handler is a simple function that accepts an object with variables from your bot and can modify it.
+ * Once the handler has modified or added some variables, the bot receives them and continues to execute blocks in scenario.
+ * Please read more here https://github.com/aimylogic/nodejs-webhook
  */
 
 'use strict';
 
 module.exports = (webhook) => {
     /**
-     * Зарегистрируйте здесь ваши обработчики событий. Например
+     * Register some handlers here
      *
-     * webhook.on('событие', (session) => session.variable = 'значение');
-     *
-     * Подробнее читайте здесь - https://github.com/aimylogic/nodejs-webhook
+     * webhook.on('action1', (session) => session.variable = 'some value');
      */
 };
