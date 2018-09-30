@@ -1,4 +1,4 @@
-#### Шаблон вебхука для ботов на Node.js
+## Node JS webhook template
 
 Please read more about Aimylogic webhooks in our [Help Center](https://help.aimylogic.com/en/article/webhook-14yx2uz/).
 
