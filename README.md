@@ -10,7 +10,7 @@ Please click on the button below to run your copy of this webhook on Heroku
 
 Heroku will build and deploy your webhook automatically. After that you have to provide a public URL of your webhook in your bot's settings.
 
-[![Clock to play](https://i.imgur.com/ePsgzmf.jpg)](https://player.vimeo.com/video/283196539 "Click to play")
+[![Clock to play](https://i.imgur.com/ePsgzmf.jpg)](https://player.vimeo.com/video/292581306 "Click to play")
 
 ### How to upload code changes
 Please make the next steps to upload your changes on Heroku.
