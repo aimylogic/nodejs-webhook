@@ -3,7 +3,7 @@
 Please read more about Aimylogic webhooks in our [Help Center](https://help.aimylogic.com/en/article/webhook-14yx2uz/).
 
 ## How to run on Heroku
-[heroku.com](http://heroku.com) предоставляет provides a free plan for Node JS applications.
+[heroku.com](http://heroku.com) provides a free plan for Node JS applications.
 Please click on the button below to run your copy of this webhook on Heroku
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/aimylogic/nodejs-webhook)
