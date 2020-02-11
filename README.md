@@ -98,12 +98,13 @@ You can add as many handlers as you need
 
 ```javascript
 module.exports = (webhook) => {
-  webhook
-    .on('action1', (session) => {
+  
+  webhook.on('action1', (session) => {
             ...
         }
-    )
-    .on('action2', (session) => {
+    );
+    
+  webhook.on('action2', (session) => {
             ...
         }
     );
