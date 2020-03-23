@@ -2,7 +2,7 @@
   "name": "Node JS Webhook",
   "description": "Node JS template for Aimylogic Webhook. You'll be able to change it's code after deployment.",
   "repository": "https://github.com/aimylogic/nodejs-webhook",
-  "logo": "https://cdn.rawgit.com/heroku/node-js-getting-started/master/public/node.svg",
+  "logo": "https://cdn.jsdelivr.net/gh/heroku/node-js-getting-started@master/public/node.svg",
   "website": "http://aimylogic.com",
   "buildpacks": [
     {
